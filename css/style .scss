@@ -1,0 +1,170 @@
+/* Подключение шрифтов */
+
+@font-face {
+  font-family: "Europe";
+  src: url("../fonts/europe.ttf");
+  src: url("../fonts/europe.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Каркас */
+
+body {
+	background: #fff;
+	height: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1024px;
+}
+
+.clr {
+	clear: both;
+}
+
+.header,
+.content,
+.footer {
+	width: 100%;
+}
+
+/* HEADER */
+
+.header .logo {
+	float: left;
+	padding-top: 12px;
+}
+
+.header .telephone {
+	font-family: "Europe";
+	color:  #eb5017;
+	float: right;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+	padding: 37px 20px 0 0;
+	text-align: left;
+}
+
+.header .telephone .paragrapher {
+	margin: 0;
+}
+
+/* NAVIGATION */
+
+.header .nav {
+	margin: 17px 12px 0 12px; 
+}
+
+.header .nav .nav__list {
+	background: #231f20;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.header .nav .nav__list .nav__list-item {
+	display: inline-block; 
+}
+
+.header .nav .nav__list .nav__list-item .nav__list-link {
+	border-right: 1px solid #eb5017;
+	display: block;	
+	color:  #ffffff;
+	font-size: 14px;
+	font-family: Arial;
+	font-weight: 400;
+	line-height: 43px;
+	padding: 0px 37px; 
+	text-align: left;
+	text-decoration: none;
+}
+
+.header .nav .nav__list .nav__list-item .nav__list-link:hover,
+.header .nav .nav__list .nav__list-item .nav__list-link.current {
+	background: #eb5017;
+}
+
+.header .nav .nav__list .nav__list-item:last-child .nav__list-link {
+	border: 0;
+}
+
+/* Хлебные крошки */
+
+.breadcrumbs {
+	display: inline-block;
+	padding: 8px 0 0 31px;
+	margin: 0;
+	list-style: none;
+}
+
+.breadcrumbs__item {
+	display: inline-block;
+}
+
+.breadcrumbs__item .breadcrumbs__item-link {
+	font-family: Arial;
+	color:  #231f20;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 24px;
+	text-decoration: underline;
+	text-align: left;
+}
+
+.breadcrumbs__item .breadcrumbs__item-link.current {
+	text-decoration: none;
+}
+
+/* FOOTER */
+
+.footer {	
+	position: fixed;
+	bottom: 0;
+	left: 0;	
+	right: 0;	
+}
+
+.footer .container {
+	background: #231f20;
+	padding: 0 12px;
+	height: 100%;
+}
+
+.footer .nav {
+	text-align: left;
+	padding: 0 0 15px 63px;
+}
+
+.footer .nav .nav__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer .nav .nav__list .nav__list-item {
+	display: inline-block;
+}
+
+
+.footer .nav .nav__list .nav__list-item .nav__list-link {
+  font-family: Arial;
+	color:  #ffffff;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 43px;
+	padding: 0 11px;
+	text-decoration: underline;
+}
+
+.footer .nav .nav__list .nav__list-item .nav__list-link.current,
+.footer .nav .nav__list .nav__list-item .nav__list-link:hover {
+	text-decoration: none;
+}
+
+
